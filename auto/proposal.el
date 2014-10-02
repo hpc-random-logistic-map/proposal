@@ -1,5 +1,6 @@
 (TeX-add-style-hook "proposal"
  (lambda ()
+    (LaTeX-add-bibliographies)
     (LaTeX-add-environments
      "definition"
      "thm"

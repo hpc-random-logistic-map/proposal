@@ -115,6 +115,12 @@ x_{n+1}=rx_n(1-x_n)
 \caption{The deterministic Logistic Map.}
 	\end{center}
 \end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{det_bif}
+\caption{The bifurcation diagram for the deterministic logistic map.}
+	\end{center}
+\end{figure}
 Fixed points are located where the line $y=x$ intersects with the
 Logistic Map. As the parameter $r$ is increased or decreased over the
 interval [0,4], the map undergoes period doubling. Around $r=3.6$, the
@@ -153,6 +159,15 @@ C++ and implementing parallelization through OpenMP. Other possible improvements
 IO optimization and memory optimization (possible improvements through
 HDF5). 
 
+\subsection{Application to engineering}
+This project has potential applications to civil engineering in terms
+of treating contaminated groundwater \cite{neupauer}. Essentially, the
+distribution of rocks underground can be viewed as a random field
+distributed spatially, through which treatment solution must mix with
+contaminated groundwater. Understanding the problem of spatial
+randomness in one dimension can be generalized to two dimensions, with
+the end goal of successfully simulating chaotic advection and reaction in two dimensions. 
+
 \section{Analysis}
 The analysis of our simulation will encompass the following:
 \be
@@ -164,4 +179,8 @@ sizes.
 \item Compare the performance of our simulation in terms of GFLOP/s to
   the bite:flop ratio in the Roofline plot
 \ee
+
+\bibliographystyle{plain}
+\bibliography{proposal}
+
 \end{document}
