@@ -150,10 +150,18 @@ distribution.
 An initial serial implementation has been developed for this project and mildly tested in
 MATLAB. Our project would consist of converting the existing code to
 C++ and implementing parallelization through OpenMP. Other possible improvements include
-IO optimization and memory optimization.
+IO optimization and memory optimization (possible improvements through
+HDF5). 
 
-\section{Analysis:}
-Here goes a description of analysis methods we will use to prove the 
-success of your implementation. This includes things such as scaling, performance 
-metrics, ect
+\section{Analysis}
+The analysis of our simulation will encompass the following:
+\be
+\item Compare the MFLOP/s (using profiling from psrun) for a variable number of simulation
+sizes. 
+\item Measure the speedup after implementing OpenMP. 
+\item Analyze the Karp-Flatt Metric to see how the code
+  performs in parallel. 
+\item Compare the performance of our simulation in terms of GFLOP/s to
+  the bite:flop ratio in the Roofline plot
+\ee
 \end{document}
