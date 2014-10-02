@@ -89,17 +89,14 @@
 \author{Amy Le (5576)\\Long Tat (4576)\\Emily Bertelson (4576)\\Kristina Entzel (4576)}
 \maketitle
 
-\section{Goal}
+\section{Introduction}
 The purpose of this project is to characterize the Random Logistic
 Map. In particular, we will be studying the stability of the map,
 which includes locating fixed points and generating bifurcation
 diagrams. As the map has an element of randomness to it, many
-simulations (a large $N$) would be required for statistical analysis. This project is a subset of a larger work in progress. An
-initial serial implementation has been developed and mildly tested in
-MATLAB. The project would consist of converting the existing code to
-C++ and implementing parallelization (OpenMP). Other possible improvements include
-IO optimization and memory optimization.
-\section{Background Information}
+simulations (a large $N$) would be required for statistical analysis. This project is a subset of a larger work in progress
+and requires optimization.
+\section{Description and Background}
 \subsection{Deterministic Logistic Map}
 The Logistic map is a popularly studied topic in nonlinear
 dynamics. The Logistic function is described as follows:
@@ -141,5 +138,13 @@ distribution.
 		\includegraphics[scale=0.7]{random_cobweb}
 	\end{center}
 \end{figure}
+An initial serial implementation has been developed for this project and mildly tested in
+MATLAB. Our project would consist of converting the existing code to
+C++ and implementing parallelization through OpenMP. Other possible improvements include
+IO optimization and memory optimization.
 
+\section{Analysis:}
+Here goes a description of analysis methods we will use to prove the 
+success of your implementation. This includes things such as scaling, performance 
+metrics, ect
 \end{document}
